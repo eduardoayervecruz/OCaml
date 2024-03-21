@@ -34,7 +34,7 @@ crazy3val: crazy3val.ml
 	$(OCAML) $(FLAGS) -o crazy3val crazy3val.ml
 
 clean: 
-	rm -f max eval last sumlist sigma logic checkmetro crazy3val priority crazy2val iter parenize mathemadiga crs2q *.cmi *.cmo 
+	rm -f max s2q eval last sumlist sigma logic checkmetro crazy3val priority crazy2val iter parenize mathemadiga crs2q *.cmi *.cmo 
 
 iter: iter.ml
 	$(OCAML) $(FLAGS) -o iter iter.ml
