@@ -17,7 +17,7 @@ let () =
   print_bool (checkMetro (AREA("a", AREA("a", STATION "a"))));
   print_bool (checkMetro (AREA("a", AREA("b", CONNECT(STATION "a", STATION "b")))));
   print_bool (checkMetro (CONNECT(AREA("a", STATION "a"), AREA("b", STATION "b"))));
-  print_bool (checkMetro (AREA("c", CONNECT(AREA("a", STATION "a"), AREA("b", STATION "b")))));
+  print_bool (checkMetro (AREA("a", CONNECT(STATION "a", AREA("b", STATION "a")))));
   
   print_bool (checkMetro (AREA("a", STATION "b")));
   print_bool (checkMetro (CONNECT(STATION "a", STATION "b")));

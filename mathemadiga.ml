@@ -82,7 +82,7 @@ let rec diff (expr, var) =
         )
   | SUM lst -> simplify (SUM (List.map (fun e -> diff (e, var)) lst))
 
-let rec string_of_ae = function
+(*let rec string_of_ae = function
   | CONST n -> string_of_int n
   | VAR x -> x
   | POWER (x, n) -> x ^ "^" ^ string_of_int n
@@ -116,4 +116,4 @@ let () =
   Printf.printf "The derivative of expr1 with respect to x is: %s\n" (string_of_ae diff_expr1);
   Printf.printf "The derivative of expr2 with respect to x is: %s\n" (string_of_ae diff_expr2);
   Printf.printf "The derivative of expr2 with respect to x is: %s\n" (string_of_ae diff_expr3);
-;;        
+;;*)

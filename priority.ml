@@ -4,11 +4,12 @@ and rank = int
 and value = int
 
 exception EmptyHeap
+
 let rank h =
   match h with
   | EMPTY -> -1
   | NODE(r, _, _, _) -> r
-  
+
 let findMin h =
   match h with
   | EMPTY -> raise EmptyHeap
