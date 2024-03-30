@@ -2,6 +2,7 @@
 *.cmo
 *.cma
 *.cmi
+Makefile
 *.a
 *.o
 *.cmx

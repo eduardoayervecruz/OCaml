@@ -6,6 +6,9 @@ all: max eval last sumlist sigma crazy2val iter
 max: max.ml
 	$(OCAML) $(FLAGS) -o max max.ml
 
+k: k.ml
+	$(OCAML) $(FLAGS) -o k k.ml
+
 s2q: s2q.ml
 	$(OCAML) $(FLAGS) -o s2q s2q.ml
 
